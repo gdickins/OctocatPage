@@ -1,0 +1,35 @@
+body {
+    color: grey;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.octocat > a > img {
+  border: 1px solid grey;
+  border-radius: 2px;
+  margin: 10px;
+  width: 350px;
+  float: left;
+
+  margin-bottom: 10px;
+}
+.authors > li > a > img {
+  border: 1px solid grey;
+  width: 25px;
+  clear: left;
+  border-radius: 5px;
+}
+.octocat {
+  float: left;
+}
+.authors > li {
+  float: right;
+  border-bottom: 1px solid grey;
+}
+li {
+  list-style: none;
+}
+.image-caption {
+  text-align: right;
+}
