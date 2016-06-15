@@ -1,22 +1,23 @@
 body {
     color: grey;
+    font-family: Helvetica;
+    font-weight: bold;
 }
 a {
   text-decoration: none;
   color: black;
 }
-.octocat > a > img {
+.octocat > a > img { 
   border: 1px solid grey;
   border-radius: 2px;
   margin: 10px;
   width: 350px;
   float: left;
-
   margin-bottom: 10px;
 }
 .authors > li > a > img {
   border: 1px solid grey;
-  width: 25px;
+  width: 15px;
   clear: left;
   border-radius: 5px;
 }
@@ -25,11 +26,35 @@ a {
 }
 .authors > li {
   float: right;
-  border-bottom: 1px solid grey;
 }
 li {
   list-style: none;
 }
 .image-caption {
   text-align: right;
+}
+.authors {
+  display: inline;
+}
+.image-footer {
+  border-bottom: 1px solid grey;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.arrowdown {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.image-number::before {
+  content: "#"
+}
+.octocat::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #736F6E;
 }
